@@ -19,3 +19,53 @@
   --iceforge-ink: #1F2933;
   --iceforge-bg-dark: #0B1220;
 }
+/* =========================
+   Iceforge Brand Mark
+   ========================= */
+
+.brand {
+  margin-bottom: 1.5rem;
+}
+
+.iceforge-mark {
+  width: 140px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+/* Default: dark mode */
+.iceforge-mark--dark {
+  display: block;
+}
+
+.iceforge-mark--light {
+  display: none;
+}
+
+/* =========================
+   Light mode auto-switch
+   ========================= */
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: #ffffff;
+    color: #1f2933;
+  }
+
+  p {
+    color: #4b5563;
+  }
+
+  .links a {
+    color: #2563eb;
+  }
+
+  .iceforge-mark--dark {
+    display: none;
+  }
+
+  .iceforge-mark--light {
+    display: block;
+  }
+}
