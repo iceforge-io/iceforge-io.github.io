@@ -1,74 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Ice Forge</title>
-  <!-- Place these in <head> -->
-<link rel="icon" href="/favicon/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="/favicon/iceforge-favicon.svg">
-<link rel="apple-touch-icon" href="/icon/apple-touch-icon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<!-- Optional: preload mark -->
-<link rel="preload" as="image" href="/svg/iceforge-mark-dark.svg" media="(prefers-color-scheme: dark)">
-<link rel="preload" as="image" href="/svg/iceforge-mark-light.svg" media="(prefers-color-scheme: light)">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
-      background: #0e1117;
-      color: #e6edf3;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    .container {
-      text-align: center;
-      max-width: 640px;
-      padding: 2rem;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      letter-spacing: 0.05em;
-    }
-    p {
-      color: #9da7b1;
-      font-size: 1.1rem;
-    }
-    .links a {
-      margin: 0 0.75rem;
-      color: #58a6ff;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .links a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="brand">
-  <img
-    src="/svg/iceforge-mark-dark.svg"
-    alt="Iceforge"
-    class="iceforge-mark iceforge-mark--dark"
-  />
-  <img
-    src="/svg/iceforge-mark-light.svg"
-    alt="Iceforge"
-    class="iceforge-mark iceforge-mark--light"
-  />
-</div>
+    <title>Ice Forge</title>
+    <meta
+      name="description"
+      content="Open engineering foundations for data, risk, and scale."
+    />
 
-    <h1>Ice Forge</h1>
-    <p>Open engineering foundations for data, risk, and scale.</p>
-    <div class="links">
-      <a href="https://github.com/iceforge-io">GitHub</a>
-      <a href="https://github.com/iceforge-io/skadi">Skadi</a>
-    </div>
-  </div>
-</body>
+    <!-- Favicons (light/dark aware) -->
+    <link rel="icon" type="image/svg+xml" href="favicon/iceforge-favicon-dark.svg" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="favicon/iceforge-favicon-light.svg" media="(prefers-color-scheme: light)" />
+    <link rel="apple-touch-icon" href="icon/apple-touch-icon.png" />
+
+    <!-- Optional: preload brand marks -->
+    <link rel="preload" as="image" href="svg/iceforge-mark-dark.svg" media="(prefers-color-scheme: dark)" />
+    <link rel="preload" as="image" href="svg/iceforge-mark-light.svg" media="(prefers-color-scheme: light)" />
+
+    <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+    <meta property="og:title" content="Ice Forge" />
+    <meta property="og:description" content="Open engineering foundations for data, risk, and scale." />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="iceforge.css" />
+  </head>
+
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+
+    <header class="topbar" role="banner">
+      <div class="wrap">
+        <a class="wordmark" href="./" aria-label="Ice Forge home">
+          <span class="wordmark__name">Ice Forge</span>
+          <span class="wordmark__tag">Foundations</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="https://github.com/iceforge-io">GitHub</a>
+          <a href="https://github.com/iceforge-io/skadi">Skadi</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="wrap" role="main">
+      <section class="hero" aria-label="Hero">
+        <div class="hero__brand" aria-hidden="true">
+          <img class="iceforge-mark iceforge-mark--dark" src="svg/iceforge-mark-dark.svg" alt="" />
+          <img class="iceforge-mark iceforge-mark--light" src="svg/iceforge-mark-light.svg" alt="" />
+        </div>
+
+        <h1 class="hero__title">Open engineering foundations for data, risk, and scale.</h1>
+
+        <p class="hero__lead">
+          Minimal, composable building blocks for data-centric systems—designed for clarity,
+          observability, and enterprise delivery.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn" href="https://github.com/iceforge-io">Explore on GitHub</a>
+          <a class="btn btn--ghost" href="https://github.com/iceforge-io/skadi">View Skadi</a>
+        </div>
+      </section>
+
+      <section class="grid" aria-label="Projects">
+        <article class="card">
+          <h2>Skadi</h2>
+          <p>
+            A clean Spring Boot foundation for data services—built for extensibility, testability,
+            and production-grade operations.
+          </p>
+          <a class="card__link" href="https://github.com/iceforge-io/skadi">Repository →</a>
+        </article>
+
+        <article class="card">
+          <h2>Patterns</h2>
+          <p>
+            Opinionated patterns for provenance, metadata, and runtime safety—without locking you
+            into a single stack.
+          </p>
+          <a class="card__link" href="https://github.com/iceforge-io">Browse org →</a>
+        </article>
+
+        <article class="card">
+          <h2>Docs</h2>
+          <p>
+            Practical, copy/paste-ready guidance for wiring projects into CI/CD, publishing, and
+            secure distribution.
+          </p>
+          <a class="card__link" href="https://github.com/iceforge-io">Start here →</a>
+        </article>
+      </section>
+
+      <footer class="footer" role="contentinfo">
+        <p>
+          <span class="muted">©</span> <span id="y"></span> Ice Forge · Built for engineers.
+        </p>
+      </footer>
+    </main>
+
+    <script>
+      // Tiny, optional polish: keep copyright year current.
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
