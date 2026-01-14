@@ -1,0 +1,21 @@
+/* Iceforge brand mark swapping */
+.iceforge-mark {
+  width: 180px;
+  height: auto;
+  display: block;
+}
+
+.iceforge-mark--dark { display: none; }
+.iceforge-mark--light { display: block; }
+
+@media (prefers-color-scheme: dark) {
+  .iceforge-mark--dark { display: block; }
+  .iceforge-mark--light { display: none; }
+}
+
+/* Optional: background helpers */
+:root {
+  --iceforge-accent: #4FA3D1;
+  --iceforge-ink: #1F2933;
+  --iceforge-bg-dark: #0B1220;
+}
