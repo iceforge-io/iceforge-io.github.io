@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Contributing — Ice Forge</title>
+    <meta name="description" content="Contributing" />
+
+    <link rel="icon" type="image/svg+xml" href="favicon/iceforge-favicon-dark.svg" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="favicon/iceforge-favicon-light.svg" media="(prefers-color-scheme: light)" />
+    <link rel="apple-touch-icon" href="icon/apple-touch-icon.png" />
+
+    <meta name="theme-color" content="#0b0f14" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+    <link rel="stylesheet" href="iceforge.css" />
+  </head>
+
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+
+    <header class="topbar" role="banner">
+      <div class="wrap">
+        <a class="wordmark" href="./" aria-label="Ice Forge home">
+          <span class="wordmark__name">Ice Forge</span>
+          <span class="wordmark__tag">Foundations</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="./#projects">Projects</a>
+          <a href="./#docs">Docs</a>
+          <a href="https://github.com/iceforge-io">GitHub</a>
+          <a href="https://github.com/iceforge-io/skadi">Skadi</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="wrap" role="main">
+      <section class="hero" aria-label="Contributing">
+        <h1 class="hero__title">Contributing</h1>
+        <p class="hero__lead">How to propose changes, coding standards, and review expectations. (Add details from CONTRIBUTING.md.)</p>
+        <div class="hero__cta">
+          <a class="btn btn--ghost" href="./">Back to home</a>
+          <a class="btn" href="https://github.com/iceforge-io">Explore on GitHub</a>
+        </div>
+      </section>
+
+      <footer class="footer" role="contentinfo">
+        <p><span class="muted">©</span> <span id="y"></span> Ice Forge · Built for engineers.</p>
+        <p class="footer__links" aria-label="Site links">
+          <a href="governance.html">Governance</a>
+          <span class="muted">·</span>
+          <a href="security.html">Security</a>
+          <span class="muted">·</span>
+          <a href="contributing.html">Contributing</a>
+          <span class="muted">·</span>
+          <a href="roadmap.html">Roadmap</a>
+        </p>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
